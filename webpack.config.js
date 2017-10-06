@@ -15,5 +15,10 @@ module.exports = {
             }
         ]
 
+    },
+    resolve: {
+        alias: {
+            less: path.join(__dirname,'./src/less')
+        }
     }
 }

@@ -5,7 +5,7 @@
     <title>DeeJay's Resume</title>
 </head>
 <body>
-<div class="resume">
+<div class="resume clearfix">
     <!--左侧选项区-->
     <div class="leftOptions">
         <div class="avatar">
@@ -13,18 +13,130 @@
         </div>
         <div class="tabs">
             <ul>
-                <li>01 个人信息</li>
-                <li>02 项目介绍</li>
-                <li>03 专业技能</li>
-                <li>04 联系方式</li>
+                <li>个人信息</li>
+                <li>项目介绍</li>
+                <li>专业技能</li>
+                <li>联系方式</li>
             </ul>
         </div>
-        <div class="infos"></div>
-        <div class="copyrights"></div>
+        <div class="infos">
+            <a href="">
+                <svg class="boke">
+                    <use xlink:href="#icon-boke"></use>
+                </svg>
+            </a>
+            <a href="">
+                <svg class="github">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            </a>
+            <a href="">
+                <svg class="qq">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            </a>
+            <a href="">
+                <svg class="weixin">
+                    <use xlink:href="#icon-weixin2"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="copyrights">
+            <span>Open Source: <a href="https://github.com/DeeJay0921/resume" target="_blank">GitHub</a></span>
+            <br>
+            <span>&copy;Copyright: Deejay 2017</span>
+        </div>
     </div>
     <!--右侧内容区-->
-    <div class="rightContents"></div>
+    <div class="rightContents">
+        <ul class="tab-contents">
+            <li class="information">
+                <h1>
+                    <!--<svg>-->
+                        <!--<use xlink:href="#icon-gerenxinxi"></use>-->
+                    <!--</svg>-->
+                    <span>个人信息</span>
+                </h1>
+                <ul>
+                    <li>
+                        <!--<svg>-->
+                            <!--<use xlink:href="#icon-riqi"></use>-->
+                        <!--</svg>-->
+                        <span>出生日期：1996年9月</span>
+                    </li>
+                    <li>
+                        <span>意向职位： web前端工程师</span>
+                    </li>
+                    <li>
+                        <span>毕业院校： 西安电子科技大学</span>
+                    </li>
+                    <li>
+                        <span>英文水平： CET6</span>
+                    </li>
+                    <li>
+                        <span>联系电话： 18710893545</span>
+                    </li>
+                </ul>
+                <div class="description">
+                    <svg>
+                        <use xlink:href="#icon-gerenzhongxinzhuyedaipingjia"></use>
+                    </svg>
+                    <p>
+                        我是一个性格幽默、做事认真，热爱运动的人。 我喜欢研究所碰到的各种技术，热衷解决碰到的任何程序问题，
+                        不给自己设边界，有 Geek 精神。我有时间概念，能在约定时间内保证完成任务。
+                        我希望能找到有成长空间，技术上有挑战性的一份前端开发工作。
+                    </p>
+                </div>
+            </li>
+            <li class="projects">
+                <h1>
+                    <span>主要项目</span>
+                </h1>
+                <ul class="pro-items">
+                    <li>
+                        <a href="">
+                            <div>
+                                <h3>Express在线便利贴</h3>
+                                <span>基于express搭建的在线便利贴应用，带数据库和第三方登录等功能</span>
+                            </div>
+                            <img src="./src/img/note.jpg" alt="在线便利贴">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <h3>移动端的音乐网站</h3>
+                                <span>基于jQuery的移动端页面，支持页面切换歌曲跳转播放等功能</span>
+                            </div>
+                            <img src="./src/img/music.jpg" alt="netEaseMusic">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <h3>React应用之todoList</h3>
+                                <span>基于React框架开发的一个todoList应用，支持用户登录注册以及存储信息</span>
+                            </div>
+                            <img src="./src/img/todo.jpg" alt="React-to-do-list">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <h3>移动端的音乐网站</h3>
+                                <span>基于jQuery的移动端页面，支持页面切换歌曲跳转播放等功能</span>
+                            </div>
+                            <img src="./src/img/resume.jpg" alt="vue-resumer">
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <!--<li class="skills"></li>-->
+            <!--<li class="contacts"></li>-->
+        </ul>
+    </div>
 </div>
+<script src="//at.alicdn.com/t/font_434062_hpmuiehkdl5wmi.js"></script>
 <script src="public/js/index.js"></script>
 </body>
 </html>

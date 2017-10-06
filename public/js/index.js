@@ -60,62 +60,11 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(1)
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(2);
-if(typeof content === 'string') content = [[module.i, content, '']];
-// Prepare cssTransformation
-var transform;
-
-var options = {"hmr":true}
-options.transform = transform
-// add the styles to the DOM
-var update = __webpack_require__(4)(content, options);
-if(content.locals) module.exports = content.locals;
-// Hot Module Replacement
-if(false) {
-	// When the styles change, update the <style> tags
-	if(!content.locals) {
-		module.hot.accept("!!../../node_modules/_css-loader@0.28.7@css-loader/index.js!../../node_modules/_less-loader@4.0.5@less-loader/dist/cjs.js!./index.less", function() {
-			var newContent = require("!!../../node_modules/_css-loader@0.28.7@css-loader/index.js!../../node_modules/_less-loader@4.0.5@less-loader/dist/cjs.js!./index.less");
-			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-			update(newContent);
-		});
-	}
-	// When the module is disposed, remove the <style> tags
-	module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(3)(undefined);
-// imports
-
-
-// module
-exports.push([module.i, ".resume {\n  border: 1px solid red;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports) {
 
 /*
@@ -197,7 +146,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 4 */
+/* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -569,6 +518,59 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// require('normalize.css')
+__webpack_require__(3)
+__webpack_require__(6)
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(4);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/_css-loader@0.28.7@css-loader/index.js!../../node_modules/_less-loader@4.0.5@less-loader/dist/cjs.js!./reset.less", function() {
+			var newContent = require("!!../../node_modules/_css-loader@0.28.7@css-loader/index.js!../../node_modules/_less-loader@4.0.5@less-loader/dist/cjs.js!./reset.less");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\nbody,\nhtml {\n  height: 100%;\n}\nul li {\n  list-style: none;\n}\na {\n  text-decoration: none;\n  color: #111;\n}\n.clearfix:after {\n  content: '';\n  display: block;\n  clear: both;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
 /* 5 */
 /***/ (function(module, exports) {
 
@@ -661,6 +663,51 @@ module.exports = function (css) {
 	// send back the fixed css
 	return fixedCss;
 };
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(7);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(1)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../node_modules/_css-loader@0.28.7@css-loader/index.js!../../node_modules/_less-loader@4.0.5@less-loader/dist/cjs.js!./index.less", function() {
+			var newContent = require("!!../../node_modules/_css-loader@0.28.7@css-loader/index.js!../../node_modules/_less-loader@4.0.5@less-loader/dist/cjs.js!./index.less");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, ".resume {\n  height: 100%;\n}\n.resume .leftOptions {\n  position: fixed;\n  z-index: 100;\n  background: #202021;\n  background: linear-gradient(135deg, #2c2e2c 0, #202021 100%);\n  top: 0;\n  bottom: 0;\n  left: 0;\n  width: 250px;\n  text-align: left;\n  padding: 5vh;\n}\n.resume .leftOptions .avatar {\n  text-align: center;\n  margin-top: 6vh;\n  font-size: 40px;\n  color: #529a76;\n  transition: all .3s;\n}\n.resume .leftOptions .avatar:hover {\n  color: rgba(82, 154, 118, 0.67);\n}\n.resume .leftOptions .tabs ul {\n  margin-top: 60px;\n}\n.resume .leftOptions .tabs ul li {\n  padding-top: 20px;\n  padding-bottom: 20px;\n  color: #ffffff;\n  font-size: 18px;\n  transition: all .3s;\n}\n.resume .leftOptions .tabs ul li:hover {\n  color: #85bfff;\n}\n.resume .leftOptions .infos {\n  position: fixed;\n  bottom: 15vh;\n  left: 5vh;\n}\n.resume .leftOptions .infos svg {\n  width: 40px;\n  height: 40px;\n  transition: all .3s;\n  opacity: 0.6;\n}\n.resume .leftOptions .infos .boke {\n  fill: #ec6149;\n}\n.resume .leftOptions .infos .boke:hover {\n  fill: #ff1001;\n  opacity: 1;\n}\n.resume .leftOptions .infos .github {\n  fill: #5c928f;\n}\n.resume .leftOptions .infos .github:hover {\n  fill: #8ea4ad;\n  opacity: 1;\n}\n.resume .leftOptions .infos .qq {\n  fill: #faaf08;\n}\n.resume .leftOptions .infos .qq:hover {\n  fill: #ff7601;\n  opacity: 1;\n}\n.resume .leftOptions .infos .weixin {\n  fill: #94cb23;\n}\n.resume .leftOptions .infos .weixin:hover {\n  fill: #afff08;\n  opacity: 1;\n}\n.resume .leftOptions .copyrights {\n  color: #aaa;\n  font-size: 14px;\n  position: fixed;\n  bottom: 2vh;\n  left: 5vh;\n}\n.resume .leftOptions .copyrights a {\n  color: #aaaaaa;\n  text-decoration: underline;\n  transition: all .3s;\n}\n.resume .leftOptions .copyrights a:hover {\n  color: #ffffff;\n}\n.resume .rightContents {\n  padding-left: 250px;\n  height: 100%;\n}\n.resume .rightContents .tab-contents {\n  height: 100%;\n}\n.resume .rightContents .tab-contents .information {\n  display: none;\n  padding: 5vh 10vh;\n  height: 100%;\n  background: url(\"http://ox2pbpy73.bkt.clouddn.com/bg.jpg\") center center no-repeat;\n  background-size: cover;\n}\n.resume .rightContents .tab-contents .information h1 {\n  color: #fff;\n  display: inline-flex;\n  align-items: center;\n  justify-content: space-between;\n  font-weight: normal;\n}\n.resume .rightContents .tab-contents .information h1 svg {\n  width: 40px;\n  height: 40px;\n  fill: white;\n  margin-right: 1vh;\n}\n.resume .rightContents .tab-contents .information ul {\n  color: #ffffff;\n  margin-top: 4vh;\n}\n.resume .rightContents .tab-contents .information ul li {\n  margin-bottom: 4vh;\n  font-size: 18px;\n}\n.resume .rightContents .tab-contents .information ul li svg {\n  width: 20px;\n  height: 20px;\n  fill: white;\n  margin-right: 1vh;\n}\n.resume .rightContents .tab-contents .information .description {\n  margin-top: 3vh;\n  max-width: 80vh;\n}\n.resume .rightContents .tab-contents .information .description svg {\n  fill: white;\n  width: 40px;\n  height: 40px;\n}\n.resume .rightContents .tab-contents .information .description p {\n  margin-top: 3vh;\n  color: #ffffff;\n  font-size: 16px;\n  line-height: 2em;\n}\n.resume .rightContents .tab-contents .projects {\n  padding: 5vh 10vh;\n  background: rgba(208, 231, 222, 0.7);\n}\n.resume .rightContents .tab-contents .projects h1 {\n  color: #111;\n  display: inline-flex;\n  align-items: center;\n  justify-content: space-between;\n  font-weight: normal;\n}\n.resume .rightContents .tab-contents .projects .pro-items {\n  display: flex;\n  flex-wrap: wrap;\n  overflow: auto;\n}\n.resume .rightContents .tab-contents .projects .pro-items li {\n  width: 60vh;\n  height: 40vh;\n  overflow: hidden;\n  margin: 5vh;\n  border-radius: 5px;\n}\n.resume .rightContents .tab-contents .projects .pro-items li a {\n  display: inline-block;\n  position: relative;\n}\n.resume .rightContents .tab-contents .projects .pro-items li a:hover img {\n  transform: scale(1.2);\n}\n.resume .rightContents .tab-contents .projects .pro-items li a div {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  z-index: 1;\n  background: rgba(164, 255, 240, 0.55);\n  opacity: 0;\n  transition: all .3s;\n}\n.resume .rightContents .tab-contents .projects .pro-items li a div:hover {\n  opacity: 1;\n}\n.resume .rightContents .tab-contents .projects .pro-items li a div h3 {\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  transition: all 1s;\n}\n.resume .rightContents .tab-contents .projects .pro-items li a div:hover h3 {\n  top: 25%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n.resume .rightContents .tab-contents .projects .pro-items li a div span {\n  text-align: center;\n  position: absolute;\n  top: 0;\n  left: 50%;\n  transform: translateX(-50%);\n  transition: all 1s;\n}\n.resume .rightContents .tab-contents .projects .pro-items li a div:hover span {\n  top: 45%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n}\n.resume .rightContents .tab-contents .projects .pro-items li a img {\n  width: 100%;\n  height: 100%;\n  transition: all .3s;\n}\n", ""]);
+
+// exports
 
 
 /***/ })
