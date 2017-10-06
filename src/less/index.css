@@ -222,3 +222,55 @@
   height: 100%;
   transition: all .3s;
 }
+.resume .rightContents .tab-contents .skills {
+  display: none;
+  background: rgba(208, 231, 222, 0.7);
+  padding: 5vh 10vh;
+}
+.resume .rightContents .tab-contents .skills h1 {
+  font-weight: normal;
+}
+.resume .rightContents .tab-contents .skills #main {
+  margin: 0 auto;
+}
+.resume .rightContents .tab-contents .skills .intro {
+  margin-top: 10vh;
+}
+.resume .rightContents .tab-contents .skills .intro svg {
+  margin-top: 5vh;
+  width: 40px;
+  height: 40px;
+}
+.resume .rightContents .tab-contents .skills .intro .text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.resume .rightContents .tab-contents .skills .intro .text .cap,
+.resume .rightContents .tab-contents .skills .intro .text .adv {
+  width: 70vh;
+  line-height: 2em;
+}
+.resume .rightContents .tab-contents .skills .intro .text .cap h3,
+.resume .rightContents .tab-contents .skills .intro .text .adv h3 {
+  position: relative;
+  left: -3vh;
+}
+.resume .rightContents .tab-contents .skills .intro .text .cap ul,
+.resume .rightContents .tab-contents .skills .intro .text .adv ul,
+.resume .rightContents .tab-contents .skills .intro .text .cap li,
+.resume .rightContents .tab-contents .skills .intro .text .adv li {
+  list-style: disc;
+}
+.resume .rightContents .tab-contents .skills .intro .text .cap {
+  margin-right: 5vh;
+}
+.resume .rightContents .tab-contents .contacts {
+  display: none;
+  padding: 5vh 10vh;
+  background: rgba(208, 231, 222, 0.7);
+  height: 100%;
+}
+.resume .rightContents .tab-contents .contacts h1 {
+  font-weight: normal;
+}
