@@ -274,3 +274,56 @@
 .resume .rightContents .tab-contents .contacts h1 {
   font-weight: normal;
 }
+.resume .rightContents .tab-contents .contacts ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 5vh 0;
+  align-items: center;
+}
+.resume .rightContents .tab-contents .contacts ul li {
+  width: 30vh;
+  position: relative;
+}
+.resume .rightContents .tab-contents .contacts ul li img {
+  width: 100%;
+}
+.resume .rightContents .tab-contents .contacts ul li span {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #aaa;
+}
+.resume .rightContents .tab-contents .contacts .rest {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10vh;
+}
+.resume .rightContents .tab-contents .contacts .rest .phone,
+.resume .rightContents .tab-contents .contacts .rest .c-github,
+.resume .rightContents .tab-contents .contacts .rest .c-blog {
+  font-size: 16px;
+  display: inline-flex;
+  align-items: center;
+  color: #555;
+}
+.resume .rightContents .tab-contents .contacts .rest .phone svg,
+.resume .rightContents .tab-contents .contacts .rest .c-github svg,
+.resume .rightContents .tab-contents .contacts .rest .c-blog svg {
+  width: 20px;
+  height: 20px;
+  fill: black;
+  margin-right: 1vh;
+}
+.resume .rightContents .tab-contents .contacts .rest .phone a,
+.resume .rightContents .tab-contents .contacts .rest .c-github a,
+.resume .rightContents .tab-contents .contacts .rest .c-blog a {
+  color: #555;
+  transition: all .3s;
+}
+.resume .rightContents .tab-contents .contacts .rest .phone a:hover,
+.resume .rightContents .tab-contents .contacts .rest .c-github a:hover,
+.resume .rightContents .tab-contents .contacts .rest .c-blog a:hover {
+  color: #111111;
+  text-decoration: underline;
+}
