@@ -7,7 +7,5 @@ var Tab = require('./tab').Tab
 var myChart = require('./echarts').myChart
 var option = require('./echarts').opt
 
-// window.onload = function () {
     Tab.start($('.tabs'));
     myChart.setOption(option);
-// }
