@@ -20,5 +20,9 @@ module.exports = {
         alias: {
             less: path.join(__dirname,'./src/less')
         }
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin()
+
+    ]
 }
