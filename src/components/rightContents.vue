@@ -25,7 +25,7 @@ import information from './information'
       .information {
         padding: 5vh 10vh;
         height: 100%;
-        background: url("../assets/bg.jpg") center center no-repeat;
+        background: url("//ox2pbpy73.bkt.clouddn.com/bg.jpg") center center no-repeat;
         background-size: cover;
         h1 {
           color: #fff;
