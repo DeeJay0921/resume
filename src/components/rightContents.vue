@@ -1,108 +1,28 @@
-#tab-contents .active {
-  display: block;
-}
-.resume {
-  height: 100%;
-  .leftOptions {
-    position: fixed;
-    z-index: 100;
-    background: #202021;
-    background: linear-gradient(135deg, #2c2e2c 0, #202021 100%);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 250px;
-    text-align: left;
-    padding: 5vh;
-    .avatar {
-      text-align: center;
-      margin-top: 6vh;
-      font-size: 40px;
-      color: #529a76;
-      transition: all .3s;
-      &:hover {
-        color: rgba(82, 154, 118, 0.67);
-      }
+<template>
+    <div class="rightContents">
+        <ul class="tab-contents" id='tab-contents'>
+            <router-view></router-view>
+        </ul>
+    </div>
+    
+</template>
+<script>
+import information from './information'
+    export default {
+        name: 'rightContents',
+        components: {
+            information,
+        }
     }
-    .tabs {
-      ul {
-        margin-top: 60px;
-        li {
-          padding-top: 20px;
-          padding-bottom: 20px;
-          color: #ffffff;
-          font-size: 18px;
-          transition: all .3s;
-          &:hover {
-            color: #85bfff;
-          }
-        }
-      }
-    }
-    .infos {
-      position: fixed;
-      bottom: 15vh;
-      left: 5vh;
-      svg {
-        width: 40px;
-        height: 40px;
-        transition: all .3s;
-        opacity: 0.6;
-      }
-      .boke {
-        fill: #ec6149;
-        &:hover {
-          fill: #ff1001;
-          opacity: 1;
-        }
-      }
-      .github {
-        fill: #5c928f;
-        &:hover {
-          fill: #8ea4ad;
-          opacity: 1;
-        }
-      }
-      .qq {
-        fill: #faaf08;
-        &:hover {
-          fill: #ff7601;
-          opacity: 1;
-        }
-      }
-      .weixin {
-        fill: #94cb23;
-        &:hover {
-          fill: #afff08;
-          opacity: 1;
-        }
-      }
-    }
-    .copyrights {
-      color: #aaa;
-      font-size: 14px;
-      position: fixed;
-      bottom: 2vh;
-      left: 5vh;
-      a {
-        color: #aaaaaa;
-        text-decoration: underline;
-        transition: all .3s;
-        &:hover {
-          color: #ffffff;
-        }
-      }
-    }
-  }
-  .rightContents {
-    padding-left: 250px;
+</script>
+<style lang='scss'>
+.rightContents {
     height: 100%;
     //background: url("http://ox2pbpy73.bkt.clouddn.com/bg.jpg") center center no-repeat;
     //background-size: cover;
     .tab-contents {
       height: 100%;
       .information {
-        display: none;
         padding: 5vh 10vh;
         height: 100%;
         background: url("//ox2pbpy73.bkt.clouddn.com/bg.jpg") center center no-repeat;
@@ -151,7 +71,6 @@
         }
       }
       .projects {
-        display: none;
         padding: 5vh 10vh;
         //height: 100%;
         background: rgba(208, 231, 222, 0.7);
@@ -226,9 +145,8 @@
         }
       }
       .skills {
-        display: none;
         background: rgba(208, 231, 222, 0.7);
-        //height: 100%;
+        height: 100%;
         padding: 5vh 10vh;
         h1 {
           font-weight: normal;
@@ -266,7 +184,6 @@
         }
       }
       .contacts {
-        display: none;
         padding: 5vh 10vh;
         background: rgba(208, 231, 222, 0.7);
         height: 100%;
@@ -321,4 +238,4 @@
       }
     }
   }
-}
+</style>
