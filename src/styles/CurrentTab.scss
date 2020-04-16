@@ -1,0 +1,17 @@
+.tabContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  .tab {
+    padding: 2px 0;
+    cursor: pointer;
+    svg {
+      fill: rgb(168, 30, 115);
+    }
+  }
+}
