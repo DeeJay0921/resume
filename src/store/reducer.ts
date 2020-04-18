@@ -1,5 +1,6 @@
 import { SET_TAB, ActionTypes } from "./actions";
 import { combineReducers } from "redux";
+import {func} from "prop-types";
 
 // export type State = {
 //   currentTab: number
@@ -16,8 +17,13 @@ function setCurrentTab(currentTab: number = 1, action: ActionTypes): number {
   }
 }
 
+function tabSize (tabSize: number = 3): number {
+  return tabSize;
+}
+
 export const rootReducer = combineReducers({
   currentTab: setCurrentTab,
+  tabSize,
 });
 
 export type State = ReturnType<typeof rootReducer>

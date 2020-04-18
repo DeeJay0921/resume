@@ -9,6 +9,7 @@ interface IProps {
   // onTabChange: (tab: number) => void;
   setTab: (tab: number) => void;
   currentTab: number;
+  tabSize: number;
 }
 
 class CurrentTab extends React.Component<IProps, {}> {
@@ -19,24 +20,24 @@ class CurrentTab extends React.Component<IProps, {}> {
   };
 
   render() {
-    const { currentTab } = this.props;
-    // TabList [1,2,3]
-    const tabList: number[] = [1, 2, 3];
+    const { currentTab, tabSize } = this.props;
+    const elementList = [];
+    for (let item = 1; item <= tabSize; item++) {
+      elementList.push((
+        <div className="tab" key={item} onClick={() => this.tabClick(item)}>
+          <svg className="icon" aria-hidden="true">
+            {item === currentTab ? (
+              <use xlinkHref="#icon-cc-dot" />
+            ) : (
+              <use xlinkHref="#icon-cc-dot-o" />
+            )}
+          </svg>
+        </div>
+      ))
+    }
     return (
       <div className="tabContainer">
-        {tabList.map((item: number) => {
-          return (
-            <div className="tab" key={item} onClick={() => this.tabClick(item)}>
-              <svg className="icon" aria-hidden="true">
-                {item === currentTab ? (
-                  <use xlinkHref="#icon-cc-dot" />
-                ) : (
-                  <use xlinkHref="#icon-cc-dot-o" />
-                )}
-              </svg>
-            </div>
-          );
-        })}
+        {elementList}
       </div>
     );
   }

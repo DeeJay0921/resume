@@ -20,10 +20,16 @@ interface IProps {
 
 class PCLayout extends React.Component<IProps, {}> {
   ref = React.createRef<HTMLDivElement>();
-
+  slidePage = null;
   componentDidMount(): void {
-    new SlidePage();
+    this.slidePage = new SlidePage({
+      after: this.afterPageSlide
+    });
   }
+
+  afterPageSlide = (origin: number, direction: string, target: number) => {
+    this.props.setTab(target);
+  };
 
   render() {
     return (
